@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D75D80EF-D161-4036-9395-D35F65A6DB86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoogleMeasurementProtocol_net40_client</RootNamespace>
+    <AssemblyName>GoogleMeasurementProtocol-net40-client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GoogleMeasurementProtocol\Constants.cs">
+      <Link>Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Extensions\ListExtensions.cs">
+      <Link>Extensions\ListExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\GoogleAnalyticsRequestFactory.cs">
+      <Link>GoogleAnalyticsRequestFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\AppTracking\ApplicationId.cs">
+      <Link>Parameters\AppTracking\ApplicationId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\AppTracking\ApplicationInstallerId.cs">
+      <Link>Parameters\AppTracking\ApplicationInstallerId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\AppTracking\ApplicationName.cs">
+      <Link>Parameters\AppTracking\ApplicationName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\AppTracking\ApplicationVersion.cs">
+      <Link>Parameters\AppTracking\ApplicationVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ContentExperiments\ExperimentId.cs">
+      <Link>Parameters\ContentExperiments\ExperimentId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ContentExperiments\ExperimentVariant.cs">
+      <Link>Parameters\ContentExperiments\ExperimentVariant.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ContentInformation\DocumentHostName.cs">
+      <Link>Parameters\ContentInformation\DocumentHostName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ContentInformation\DocumentLocationUrl.cs">
+      <Link>Parameters\ContentInformation\DocumentLocationUrl.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ContentInformation\DocumentPath.cs">
+      <Link>Parameters\ContentInformation\DocumentPath.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ContentInformation\DocumentTitle.cs">
+      <Link>Parameters\ContentInformation\DocumentTitle.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ContentInformation\LinkId.cs">
+      <Link>Parameters\ContentInformation\LinkId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ContentInformation\ScreenName.cs">
+      <Link>Parameters\ContentInformation\ScreenName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\CustomDimensions\CustomDimension.cs">
+      <Link>Parameters\CustomDimensions\CustomDimension.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\CustomDimensions\CustomMetric.cs">
+      <Link>Parameters\CustomDimensions\CustomMetric.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\CurrencyCode.cs">
+      <Link>Parameters\ECommerce\CurrencyCode.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\ItemCategory.cs">
+      <Link>Parameters\ECommerce\ItemCategory.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\ItemCode.cs">
+      <Link>Parameters\ECommerce\ItemCode.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\ItemName.cs">
+      <Link>Parameters\ECommerce\ItemName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\ItemPrice.cs">
+      <Link>Parameters\ECommerce\ItemPrice.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\ItemQuantity.cs">
+      <Link>Parameters\ECommerce\ItemQuantity.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\TransactionAffiliation.cs">
+      <Link>Parameters\ECommerce\TransactionAffiliation.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\TransactionId.cs">
+      <Link>Parameters\ECommerce\TransactionId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\TransactionRevenue.cs">
+      <Link>Parameters\ECommerce\TransactionRevenue.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\TransactionShipping.cs">
+      <Link>Parameters\ECommerce\TransactionShipping.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\ECommerce\TransactionTax.cs">
+      <Link>Parameters\ECommerce\TransactionTax.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\Affiliation.cs">
+      <Link>Parameters\EnhancedECommerce\Affiliation.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\CheckoutStep.cs">
+      <Link>Parameters\EnhancedECommerce\CheckoutStep.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\CheckoutStepOption.cs">
+      <Link>Parameters\EnhancedECommerce\CheckoutStepOption.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\CouponCode.cs">
+      <Link>Parameters\EnhancedECommerce\CouponCode.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductAction.cs">
+      <Link>Parameters\EnhancedECommerce\ProductAction.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductActionList.cs">
+      <Link>Parameters\EnhancedECommerce\ProductActionList.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductBrand.cs">
+      <Link>Parameters\EnhancedECommerce\ProductBrand.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductCategory.cs">
+      <Link>Parameters\EnhancedECommerce\ProductCategory.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductCouponCode.cs">
+      <Link>Parameters\EnhancedECommerce\ProductCouponCode.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductCustomDimension.cs">
+      <Link>Parameters\EnhancedECommerce\ProductCustomDimension.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductCustomMetric.cs">
+      <Link>Parameters\EnhancedECommerce\ProductCustomMetric.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionBrand.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionBrand.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionCategory.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionCategory.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionCustomDimension.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionCustomDimension.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionCustomMetric.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionCustomMetric.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionListName.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionListName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionName.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionPosition.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionPosition.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionPrice.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionPrice.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionSku.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionSku.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductImpressionVariant.cs">
+      <Link>Parameters\EnhancedECommerce\ProductImpressionVariant.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductName.cs">
+      <Link>Parameters\EnhancedECommerce\ProductName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductPosition.cs">
+      <Link>Parameters\EnhancedECommerce\ProductPosition.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductPrice.cs">
+      <Link>Parameters\EnhancedECommerce\ProductPrice.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductQuantity.cs">
+      <Link>Parameters\EnhancedECommerce\ProductQuantity.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductSku.cs">
+      <Link>Parameters\EnhancedECommerce\ProductSku.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\ProductVariant.cs">
+      <Link>Parameters\EnhancedECommerce\ProductVariant.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\PromotionAction.cs">
+      <Link>Parameters\EnhancedECommerce\PromotionAction.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\PromotionCreative.cs">
+      <Link>Parameters\EnhancedECommerce\PromotionCreative.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\PromotionId.cs">
+      <Link>Parameters\EnhancedECommerce\PromotionId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\PromotionName.cs">
+      <Link>Parameters\EnhancedECommerce\PromotionName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\PromotionPosition.cs">
+      <Link>Parameters\EnhancedECommerce\PromotionPosition.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\Revenue.cs">
+      <Link>Parameters\EnhancedECommerce\Revenue.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\Shipping.cs">
+      <Link>Parameters\EnhancedECommerce\Shipping.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\Tax.cs">
+      <Link>Parameters\EnhancedECommerce\Tax.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EnhancedECommerce\TransactionId.cs">
+      <Link>Parameters\EnhancedECommerce\TransactionId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EventTracking\EventAction.cs">
+      <Link>Parameters\EventTracking\EventAction.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EventTracking\EventCategory.cs">
+      <Link>Parameters\EventTracking\EventCategory.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EventTracking\EventLabel.cs">
+      <Link>Parameters\EventTracking\EventLabel.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\EventTracking\EventValue.cs">
+      <Link>Parameters\EventTracking\EventValue.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Exceptions\ExceptionDescription.cs">
+      <Link>Parameters\Exceptions\ExceptionDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Exceptions\IsExceptionFatal.cs">
+      <Link>Parameters\Exceptions\IsExceptionFatal.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\General\AnonymizeIp.cs">
+      <Link>Parameters\General\AnonymizeIp.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\General\CacheBuster.cs">
+      <Link>Parameters\General\CacheBuster.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\General\ProtocolVersion.cs">
+      <Link>Parameters\General\ProtocolVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\General\QueueTime.cs">
+      <Link>Parameters\General\QueueTime.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\General\TrackingId.cs">
+      <Link>Parameters\General\TrackingId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Hit\HitType.cs">
+      <Link>Parameters\Hit\HitType.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Hit\NonInteractionHit.cs">
+      <Link>Parameters\Hit\NonInteractionHit.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Parameter.cs">
+      <Link>Parameters\Parameter.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Session\IpOverride.cs">
+      <Link>Parameters\Session\IpOverride.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Session\SessionControl.cs">
+      <Link>Parameters\Session\SessionControl.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Session\UserAgentOverride.cs">
+      <Link>Parameters\Session\UserAgentOverride.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SocialInteractions\SocialAction.cs">
+      <Link>Parameters\SocialInteractions\SocialAction.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SocialInteractions\SocialActionTarget.cs">
+      <Link>Parameters\SocialInteractions\SocialActionTarget.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SocialInteractions\SocialNetwork.cs">
+      <Link>Parameters\SocialInteractions\SocialNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SystemInfo\DocumentEncoding.cs">
+      <Link>Parameters\SystemInfo\DocumentEncoding.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SystemInfo\FlashVersion.cs">
+      <Link>Parameters\SystemInfo\FlashVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SystemInfo\JavaEnabled.cs">
+      <Link>Parameters\SystemInfo\JavaEnabled.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SystemInfo\ScreenColors.cs">
+      <Link>Parameters\SystemInfo\ScreenColors.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SystemInfo\ScreenResolution.cs">
+      <Link>Parameters\SystemInfo\ScreenResolution.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SystemInfo\UserLanguage.cs">
+      <Link>Parameters\SystemInfo\UserLanguage.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\SystemInfo\ViewportSize.cs">
+      <Link>Parameters\SystemInfo\ViewportSize.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\DnsTime.cs">
+      <Link>Parameters\Timing\DnsTime.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\PageDownloadTime.cs">
+      <Link>Parameters\Timing\PageDownloadTime.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\PageLoadTime.cs">
+      <Link>Parameters\Timing\PageLoadTime.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\RedirectResponseTime.cs">
+      <Link>Parameters\Timing\RedirectResponseTime.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\ServerResponseTime.cs">
+      <Link>Parameters\Timing\ServerResponseTime.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\TcpConnectTime.cs">
+      <Link>Parameters\Timing\TcpConnectTime.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\UserTimingCategory.cs">
+      <Link>Parameters\Timing\UserTimingCategory.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\UserTimingLabel.cs">
+      <Link>Parameters\Timing\UserTimingLabel.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\UserTimingTime.cs">
+      <Link>Parameters\Timing\UserTimingTime.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\Timing\UserTimingVariableName.cs">
+      <Link>Parameters\Timing\UserTimingVariableName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\CampaignContent.cs">
+      <Link>Parameters\TrafficSources\CampaignContent.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\CampaignId.cs">
+      <Link>Parameters\TrafficSources\CampaignId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\CampaignKeyword.cs">
+      <Link>Parameters\TrafficSources\CampaignKeyword.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\CampaignMedium.cs">
+      <Link>Parameters\TrafficSources\CampaignMedium.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\CampaignName.cs">
+      <Link>Parameters\TrafficSources\CampaignName.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\CampaignSource.cs">
+      <Link>Parameters\TrafficSources\CampaignSource.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\DocumentReferrer.cs">
+      <Link>Parameters\TrafficSources\DocumentReferrer.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\GoogleAdWordsId.cs">
+      <Link>Parameters\TrafficSources\GoogleAdWordsId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\TrafficSources\GoogleDisplayAdsId.cs">
+      <Link>Parameters\TrafficSources\GoogleDisplayAdsId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\User\ClientId.cs">
+      <Link>Parameters\User\ClientId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Parameters\User\UserId.cs">
+      <Link>Parameters\User\UserId.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\EventRequest.cs">
+      <Link>Requests\EventRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\ExceptionTrackingRequest.cs">
+      <Link>Requests\ExceptionTrackingRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\IGoogleAnalyticsRequest.cs">
+      <Link>Requests\IGoogleAnalyticsRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\ItemRequest.cs">
+      <Link>Requests\ItemRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\PageViewRequest.cs">
+      <Link>Requests\PageViewRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\ScreenTrackingRequest.cs">
+      <Link>Requests\ScreenTrackingRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\SocialInteractionsRequest.cs">
+      <Link>Requests\SocialInteractionsRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\TransactionRequest.cs">
+      <Link>Requests\TransactionRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\GoogleMeasurementProtocol\Requests\UserTimingTrackingRequest.cs">
+      <Link>Requests\UserTimingTrackingRequest.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\RequestBase.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
